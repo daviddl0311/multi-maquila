@@ -2,15 +2,20 @@
     padding: 0;
     border: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Inria Sans", sans-serif;
 }
 header {
+    top: 0px;
+    width: 100%;
+    position: sticky;
+    z-index: 1000;
+}
+header {
     background-color: white;
-    padding-block: .3rem;
-    padding-inline: 1.8rem;
 }
 ul > li {
     color: #4A4A49;
@@ -39,24 +44,30 @@ a {
 
 /* --------- HEADER ---------- */
 .img-logo img {
-    width: 12rem;
+    width: 12.5rem;
 }
 .nav {
     justify-content: space-between;
+    padding-block: .05rem;
+    padding-inline: 1.8rem;
 }
 .enlace {
     gap: 5rem;
 }
 .enlace > li > a {
     color: #4A4A49;  
-    font-size: clamp(12px, 3vw, 18px); 
+    transition: all .3s ease-in-out;
+    font-size: clamp(15px, 3vw, 20px); 
+}
+.enlace > li > a:hover {
+    color: #3EAB35;
 }
 .btn > button {
     background-color: #3EAB35;
     color: white;
     border-radius: 10px;
     padding-block: .9rem;
-    padding-inline: 1.2rem;
+    padding-inline: 1.7rem;
     font-size: clamp(15px, 3vw, 18px);
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -64,18 +75,32 @@ a {
 .btn > button:hover {
     background-color: #309128;
 }
+.display-none {
+    display: none;
+}
+#burger-menu, .burger-label {
+    display: none;
+}
 
 /* --------- FONDO MULTI-MAQUILA  ---------- */
 .multi-maquila {
-    background-color: black;
-    height: 600px;
     position: relative;
+    background-color: black;
 }
 .img-multi img {
     width: 100%;
-    height: 600px;
-    opacity: .6;
+    height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .3;
+}
+.multi-info {
+    position: relative;
+}
+.multi-maquila {
+    height: 750px;
 }
 .logo-multi img {
     width: 15rem;
@@ -84,22 +109,24 @@ a {
     color: white;
 }
 .sub-title, .sub-title-multi {
-    font-size: clamp(30px, 3vw, 50px);
+    font-size: clamp(50px, 3vw, 60px);
 }
 .sub-title-multi {
     color: #33CC33;
 }
 .sub-title-text {
-    font-size: clamp(15px, 3vw, 18px);
     gap: .6rem;
+}
+.sub-title-text > p {
+    font-size: clamp(17px, 3vw, 18px);
 }
 .sub-title-button  button {
     background-color: #3EAB35;
     color: white;
     border-radius: 10px;
-    padding-inline: .9rem;
-    padding-block: .7rem;
-    font-size: clamp(10px, 3vw, 14px); 
+    padding-inline: 1.3rem;
+    padding-block: .8rem;
+    font-size: clamp(15px, 3vw, 17px); 
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
@@ -111,6 +138,9 @@ a {
 }
 .gap3rem {
     gap: 3rem;
+}
+.gap4rem {
+    gap: 4rem;
 }
 .gap5rem {
     gap: 5rem;
@@ -124,25 +154,29 @@ a {
 .title-multi {
     color: #3EAB35;
     text-transform: uppercase;
-    font-size: clamp(18px, 3vw, 25px);
+    font-size: clamp(23px, 3vw, 25px);
 }
 .nosotros-title {
     color: #3EAB35;
     text-transform: uppercase;
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(12px, 3vw, 22px);
 }
 .nosotros-text {
     width: 350px;
     text-align: justify;
-    font-size: clamp(15px, 3vw, 18.4px);
+    font-size: clamp(15px, 3vw, 20px);
 }
 .nosotros-img img {
     width: 20rem;
 }
 
-/*--------- SERVICIOS  ---------- */
 .servicios {
-    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/*--------- SERVICIOS  ---------- */
+.serv {
+    margin-top: 2rem;
 }
 .grid-column-servicio {
     grid-template-columns: repeat(1, auto);
@@ -151,16 +185,19 @@ a {
     border-radius: 15px;
     padding: 1.2rem;
     width: 200px;
-    height: 350px;
+    height: 380px;
 }
 .item {
     background-color: #C8EFC3;
+    box-shadow: 6px 6px 6px rgb(201, 201, 201);
 }
 .item-2 {
     background-color: #3EAB35;
+    box-shadow: 6px 6px 6px rgb(201, 201, 201);
 }
 .item-3 {
     background-color: #99E293;
+    box-shadow: 6px 6px 6px rgb(201, 201, 201);
 }
 .item-img img {
     width: 220px;
@@ -170,21 +207,185 @@ a {
     font-size: 12px;
     text-transform: uppercase;
 }
+.item-title-2 {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
 .item-text {
     color: #0B290A;
+    font-size: 15px;
+}
+.item-text-2 {
+    color: white;
     font-size: 15px;
 }
 .item-button > a {
     font-size: clamp(10px, 3vw, 15px);
     background-color: #3EAB35;
     padding-inline: 1.3rem;
-    padding-block: .6rem;
+    padding-block: .8rem;
     border-radius: 2rem;
     color: white;
+    transition: all .3s ease-in-out
+}
+.item-button > a:hover {
+    background-color: #309128;
+}
+.item-button-2 > a {
+    font-size: clamp(10px, 3vw, 15px);
+    background-color: #C8EFC3;
+    padding-inline: 1.3rem;
+    padding-block: .8rem;
+    border-radius: 2rem;
+    color: #0B290A;
+    transition: all .3s ease-in-out;
+}
+.item-button-2 > a:hover {
+    background-color: #99e293;
+}
+.item-button-3 > a {
+    font-size: clamp(10px, 3vw, 15px);
+    background-color: #C8EFC3;
+    padding-inline: 1.3rem;
+    padding-block: .8rem;
+    border-radius: 2rem;
+    color: #0B290A;
+    border: 1px solid #66CB5D;
+    transition: all .3s ease-in-out;
+}
+.item-button-3 > a:hover {
+    background-color: #297223;
 }
 .gappx {
-    gap: 20px;
+    gap: 25px;
 }
 .gappx2 {
     gap: 15px;
+}
+
+/*-------- OPTIMIZA --------*/
+.optimiza-title {
+    color: #3EAB35;
+    text-transform: uppercase;
+    font-size: clamp(18px, 3vw, 25px);
+}
+.optimiza-info {
+    margin-top: 2rem;
+}
+.optimiza-img img {
+    width: 20rem;
+}
+.optimiza-pregunta {
+    color: #297223;
+    font-size: clamp(15px, 3vw, 22px);
+    width: 340px;
+    text-align: justify;
+}
+.optimiza-text {
+    width: 350px;
+    text-align: justify;
+    font-size: clamp(15px, 3vw, 20px);
+}
+.gappx3 {
+    gap: 30px;
+}
+
+@media(max-width: 768px) {
+    /* --------- HEADER ---------- */
+    .btn {
+        display: none;
+    }
+    .logo-menu {
+        display: block;
+    }
+    .logo-menu img {
+        width: 250px;
+    }
+    .burger {
+        display: block;
+    }
+    .burger-label {
+        font-size: 25px;
+    }
+    .flex-column2 {
+        flex-direction: column;
+    }
+    .enlace {
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        max-width: 300px;
+        z-index: 6;
+        top: 0px;
+        left: -100%;
+        gap: 3rem;
+        padding-block: .6rem;
+        padding-inline: 2rem;
+        height: 100vh;
+        transition: all .3s ease-in-out;
+    }
+    .btn-2 {
+        display: block;
+    }
+    .btn-2 button {
+        background-color: #3EAB35;
+        width: 100%;
+        color: white;
+        border-radius: 10px;
+        padding-block: .9rem;
+        padding-inline: 1.2rem;
+        font-size: clamp(15px, 3vw, 18px);
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .btn-2 > button:hover {
+        background-color: #309128;
+    }
+    .burger-label {
+        display: block;
+    }
+
+    #burger-menu:checked ~ .enlace {
+        left: 0px;
+    }
+
+    /* --------- FONDO MULTI-MAQUILA  ---------- */
+    .logo-multi {
+        display: none;
+    }
+
+    /* --------- NOSOTROS  ---------- */
+    .n-1 {
+        margin-top: 2.3rem;
+    }
+    .flex-column3 {
+        flex-direction: column;
+    }
+    .center-special {
+        display: grid;
+        place-content: center;
+    }
+    .gaprem {
+        gap: 1rem;
+    }
+    
+    /*--------- SERVICIOS  ---------- */
+    .servicios {
+        display: none;
+    }
+
+    /*--------- OPTIMIZA  ---------- */
+    .optimiza-img {
+        display: none;
+    }
+    .gaprem2 {
+        gap: 3rem;
+    }
+    .gappx3 {
+        gap: 20px;
+    }
+    .optimiza-info {
+        margin-top: 0;
+    }
 }
