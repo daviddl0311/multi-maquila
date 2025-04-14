@@ -30,6 +30,9 @@ a {
     display: grid;
     place-content: center;
 }
+.center-align {
+    text-align: center;
+}
 .flex-column {
     flex-direction: column;
 }
@@ -109,8 +112,8 @@ a {
 .gap3rem {
     gap: 3rem;
 }
-.gap4rem {
-    gap: 4rem;
+.gap5rem {
+    gap: 5rem;
 }
 
 /* --------- NOSOTROS  ---------- */
@@ -135,4 +138,53 @@ a {
 }
 .nosotros-img img {
     width: 20rem;
+}
+
+/*--------- SERVICIOS  ---------- */
+.servicios {
+    margin-top: 3rem;
+}
+.grid-column-servicio {
+    grid-template-columns: repeat(1, auto);
+}
+.item, .item-2, .item-3 {
+    border-radius: 15px;
+    padding: 1.2rem;
+    width: 200px;
+    height: 350px;
+}
+.item {
+    background-color: #C8EFC3;
+}
+.item-2 {
+    background-color: #3EAB35;
+}
+.item-3 {
+    background-color: #99E293;
+}
+.item-img img {
+    width: 220px;
+}
+.item-title {
+    color: #0B290A;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.item-text {
+    color: #0B290A;
+    font-size: 15px;
+}
+.item-button > a {
+    font-size: clamp(10px, 3vw, 15px);
+    background-color: #3EAB35;
+    padding-inline: 1.3rem;
+    padding-block: .6rem;
+    border-radius: 2rem;
+    color: white;
+}
+.gappx {
+    gap: 20px;
+}
+.gappx2 {
+    gap: 15px;
 }
