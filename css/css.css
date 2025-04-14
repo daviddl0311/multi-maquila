@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inria Sans", sans-serif;
+}
+header {
+    background-color: white;
+    padding-block: .3rem;
+    padding-inline: 1.8rem;
+}
+ul > li {
+    color: #4A4A49;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.center {
+    display: grid;
+    place-content: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+/* --------- HEADER ---------- */
+.img-logo img {
+    width: 12rem;
+}
+.nav {
+    justify-content: space-between;
+}
+.enlace {
+    gap: 5rem;
+}
+.enlace > li > a {
+    color: #4A4A49;  
+    font-size: clamp(12px, 3vw, 18px); 
+}
+.btn > button {
+    background-color: #3EAB35;
+    color: white;
+    border-radius: 10px;
+    padding-block: .9rem;
+    padding-inline: 1.2rem;
+    font-size: clamp(15px, 3vw, 18px);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn > button:hover {
+    background-color: #309128;
+}
+
+/* --------- FONDO MULTI-MAQUILA  ---------- */
+.multi-maquila {
+    background-color: black;
+    height: 600px;
+    position: relative;
+}
+.img-multi img {
+    width: 100%;
+    height: 600px;
+    opacity: .6;
+    object-fit: cover;
+}
+.logo-multi img {
+    width: 15rem;
+}
+.text-multi {
+    color: white;
+}
+.sub-title, .sub-title-multi {
+    font-size: clamp(30px, 3vw, 50px);
+}
+.sub-title-multi {
+    color: #33CC33;
+}
+.sub-title-text {
+    font-size: clamp(15px, 3vw, 18px);
+    gap: .6rem;
+}
+.sub-title-button  button {
+    background-color: #3EAB35;
+    color: white;
+    border-radius: 10px;
+    padding-inline: .9rem;
+    padding-block: .7rem;
+    font-size: clamp(10px, 3vw, 14px); 
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.sub-title-button  button:hover {
+    background-color: #33CC33;
+}
+.gap2rem {
+    gap: 2rem;
+}
+.gap3rem {
+    gap: 3rem;
+}
+.gap4rem {
+    gap: 4rem;
+}
+
+/* --------- NOSOTROS  ---------- */
+.nosotros-multi {
+    background-color: white;
+    padding-block: 5rem;
+}
+.title-multi {
+    color: #3EAB35;
+    text-transform: uppercase;
+    font-size: clamp(18px, 3vw, 25px);
+}
+.nosotros-title {
+    color: #3EAB35;
+    text-transform: uppercase;
+    font-size: clamp(15px, 3vw, 20px);
+}
+.nosotros-text {
+    width: 350px;
+    text-align: justify;
+    font-size: clamp(15px, 3vw, 18.4px);
+}
+.nosotros-img img {
+    width: 20rem;
+}
