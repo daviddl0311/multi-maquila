@@ -278,8 +278,9 @@ a {
 }
 .optimiza-pregunta {
     color: #297223;
-    font-size: clamp(15px, 3vw, 22px);
+    font-size: clamp(15px, 3vw, 25px);
     width: 340px;
+    font-weight: bold;
     text-align: justify;
 }
 .optimiza-text {
@@ -289,6 +290,91 @@ a {
 }
 .gappx3 {
     gap: 30px;
+}
+
+/*--------- FOOTER ---------*/
+.footer {
+    background-color: #309128;
+    padding: 5rem;
+}
+.footer-text {
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(25px, 3vw, 34px);
+    width: 370px;
+}
+.gappx4 {
+    gap: 30px;
+}
+.footer-btn button {
+    background-color: #c8efc3;
+    color: #0b290a;
+    text-transform: uppercase;
+    padding-inline: 1.5rem;
+    padding-block: .9rem;
+    font-size: clamp(12px, 3vw, 15px);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.footer-btn button:hover {
+    background-color: #99e293;
+}
+.gappx5 {
+    gap: 18px;
+}
+.red {
+    padding-block: 1rem;
+}
+.icon-footer {
+    font-size: clamp(28px, 3vw, 30px);
+    color: #0b290a;
+    padding-left: 1.2rem;
+}
+.text {
+    font-size: clamp(17px, 3vw, 23px);
+    color: white;
+}
+.my-social {
+    padding-left: 1.1rem;
+}
+.social {
+    border-radius: 100%;
+    padding-inline: 15px;
+    padding-block: 10px;
+    background-color: #c8efc3;
+    color: #0b290a;
+    font-size: clamp(15px, 3vw, 20px);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.face:hover {
+    color: white;
+    background-color: #3b5998;
+}
+.ins:hover {
+    color: white;
+    background-color: #C13584;
+}
+.tik:hover {
+    color: white;
+    background-color: black;
+}
+.footer-title {
+    text-transform: uppercase;
+    color: #0B290A;
+    font-size: clamp(15px, 3vw, 16px);
+}
+.h-footer > a {
+    color: white;
+    font-size: clamp(15px, 3vw, 19px);
+    transition: all .3s ease-in-out;
+}
+.gap6rem {
+    gap: 6rem;
+}
+.gaprem {
+    gap: 8rem;
 }
 
 @media(max-width: 768px) {
