@@ -82,6 +82,69 @@ a {
     display: none;
 }
 
+/*--------- FORMATOS --------*/
+.formato {
+    padding-block: 5rem;
+}
+.title-formato {
+    font-size: clamp(30px, 3vw, 35px);
+    text-transform: uppercase;
+}
+.for-gap {
+    gap: 5rem;
+}
+.for-column {
+    margin-top: 3rem;
+}
+.grid-column-3 {
+    grid-template-columns: repeat(3, auto);
+}
+.grid-column-1 {
+    grid-template-columns: repeat(1, auto);
+}
+.for-item {
+    z-index: 0;
+    position: relative;
+    cursor: default;
+}
+.for-item:hover {
+    .for-inf {
+        z-index: 0;
+        height: 350px;
+        background-color: #0B290A;
+    }
+}
+.for-img img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.for-inf {
+    transition: all .3s ease-in-out;
+    position: absolute;
+    width: 280px;
+    height: 350px;
+    z-index: -1;
+    border-radius: 15px;
+}
+.gappx {
+    gap: 13px;
+}
+.for-title {
+    font-size: clamp(19px, 3vw, 20px);
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.for-text p {
+    font-size: clamp(13px, 3vw, 16px);
+    text-align: justify;
+    transition: all .3s;
+    width: 200px;
+    color: white;
+}
+
 /*--------- FOOTER ---------*/
 .footer {
     background-color: #309128;
@@ -144,6 +207,10 @@ a {
 .face:hover {
     color: white;
     background-color: #3b5998;
+}
+.what:hover {
+    color: white;
+    background-color: #25d366;
 }
 .ins:hover {
     color: white;
