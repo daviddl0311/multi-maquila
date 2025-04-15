@@ -333,15 +333,18 @@ a {
 }
 .text {
     font-size: clamp(17px, 3vw, 20px);
+}
+.text > a {
     color: white;
+
 }
 .my-social {
     padding-left: 1.1rem;
 }
 .social {
     border-radius: 100%;
-    padding-inline: 15px;
-    padding-block: 10px;
+    padding-inline: 14px;
+    padding-block: 9px;
     background-color: #c8efc3;
     color: #0b290a;
     font-size: clamp(15px, 3vw, 20px);
@@ -370,11 +373,14 @@ a {
     font-size: clamp(15px, 3vw, 19px);
     transition: all .3s ease-in-out;
 }
+.gap5rem2 {
+    gap: 5.8rem;
+}
 .gap6rem {
     gap: 6rem;
 }
 .gaprem {
-    gap: 5rem;
+    gap: 4rem;
 }
 
 @media(max-width: 768px) {
