@@ -201,7 +201,7 @@ a {
     border-radius: 15px;
     padding: 1.2rem;
     width: 200px;
-    height: 380px;
+    height: 400px;
 }
 .item {
     background-color: #C8EFC3;
@@ -234,13 +234,13 @@ a {
 }
 .item-text {
     color: #0B290A;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
 }
 .item-text-2 {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
 }
