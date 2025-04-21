@@ -244,7 +244,7 @@ a {
 }
 .h-footer > a {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
@@ -265,7 +265,7 @@ a {
     gap: 3rem;
 }
 .gap6rem-footer {
-    gap: 3.5rem;
+    gap: 3rem;
 }
 .gap6rem-footer-2 {
     gap: 6rem;
@@ -278,7 +278,7 @@ a {
 }
 .footer-img a > img {
     width: 350px;
-    height: 400px;
+    height: 450px;
     border-radius: 15px;
     transition: all .3s ease-in-out;
 }
