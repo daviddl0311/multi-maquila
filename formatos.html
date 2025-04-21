@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Maquilas - Formatos</title>
     <link rel="stylesheet" href="css/formatos_css.css">
+    <link rel="stylesheet" href="css/servicios.css">
     <link rel="website Icon" href="img/img-inicio/logo-1.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,9 +34,32 @@
                             <img src="img/img-inicio/logo-multi-maquilas.png" alt="Logo Multi-Maquila">
                         </a>
                     </li>
-                    <li><a href="index.html">Nosotros</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="#formato">Formatos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" onclick="toggleServicios()" id="toggleServiciosBtn">Servicios ▼</a>
+                            <ul class="dropdown-content" id="serviciosDropdown">
+                                <li><a href="enpaquetado.html">EMPAQUETADOS DE PRODUCTOS</a></li>
+                                <li><a href="etiquetado.html">ETIQUETADO DE PRODUCTOS</a></li>
+                                <li><a href="encajillado.html">ENCAJILLADO DE PRODCUTOS</a></li>
+                                <li><a href="embolsado.html">EMBOLSADO</a></li>
+                                <li><a href="armado-ofertas.html">SERVICIO DE ARMADO DE OFERTAS</a></li>
+                                <li><a href="retractilado.html">RETRACTILADO</a></li>
+                                <li><a href="acondicionamiento.html">ACONDICIONAMIENTO DE PRODUCTOS</a></li>
+                                <li><a href="enmangado.html">ENMANGADO TERMOENCOGIBLE</a></li>
+                                <li><a href="sachets.html">FORMATOS DE SACHETS</a></li>
+                                <li><a href="formulacion.html">FORMULACION</a></li>
+                                <li><a href="diseno-etiquetas.html">DISEÑO DE ETIQUETAS</a></li>
+                                <li><a href="asesoria-contratos.html">ASESORÍA DE CONFECCIÓN DE CONTRATOS</a></li>
+                                <li><a href="laminas-metalizadas.html">ENVASADO EN LÁMINAS METALIZADAS</a></li>
+                                <li><a href="sachets.html">ENVASADO EN SACHETS TIPO STICK</a></li>
+                                <li><a href="codificado.html">CODIFICADO DE LOTE Y FECHA DE VENCIMIENTO</a></li>
+                                <li><a href="envase-frascos.html">ENVASADO EN FRASCOS PLÁSTICOS</a></li>
+                                <li><a href="embalsado.html">SERVICIO DE EMBALSADO POSTERIOR</a></li>
+                                <li><a href="mezclado.html">FORMULACIÓN Y MEZCLADO DE POLVOS</a></li>
+                                <li><a href="contratos-abastecimiento.html">ASESORÍA PARA CONTRATOS DE ABASTECIMIENTO</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="formatos.html">Formatos</a></li>
                     <li class="display-none btn-2 center">
                         <button onclick="location.href='https://wa.me/51975541724/?text=¡Hola,%20agradecería%20más%20información!'">Escríbenos</button>
                     </li>
@@ -235,7 +259,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-column-footer gaprem">
+        <div class="flex flex-column-footer my-gap">
             <div class="flex flex-column">
                 <div class="img-logo">
                     <a href="#multi-maquilas">
@@ -246,7 +270,7 @@
                     <div class="icon-footer">
                         <i class="fa-solid fa-phone"></i>
                     </div>
-                    <div class="text center">
+                    <div class="text">
                         <a href="https://wa.me/51975541724/?text=¡Hola,%20agradecería%20más%20información!" target="_blank">
                             +51 975 541 724
                         </a>
@@ -256,7 +280,7 @@
                     <div class="icon-footer">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <div class="text center">
+                    <div class="text">
                         <a href="mailto:ventas@multi-maquilas.com?Subject=Aquí%20el%20asunto%20del%20mail">
                             ventas@multi-maquilas.com
                         </a>
@@ -300,9 +324,9 @@
                     <div class="footer-title">
                         <h2>servicios</h2>
                     </div>
-                    <a href="">Servicio1</a>
-                    <a href="">Servicio2</a>
-                    <a href="">Servicio3</a>
+                    <a href="sachets-stick.html">Sachets Stick</a>
+                    <a href="codificado.html">Codificado</a>
+                    <a href="acondicionamiento.html">Acondicionamiento</a>
                 </div>
             </div>
         </div>

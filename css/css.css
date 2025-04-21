@@ -412,28 +412,28 @@ a {
 .footer-title {
     text-transform: uppercase;
     color: #0B290A;
-    font-size: clamp(11px, 3vw, 12px);
+    font-size: clamp(9px, 3vw, 11px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
 .h-footer > a {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
+}
+.gappx3 {
+    gap: 30px;
+}
+.gap3rem {
+    gap: 3rem;
 }
 .gap5rem2 {
     gap: 5.8rem;
 }
 .gap6rem {
     gap: 6rem;
-}
-.gaprem {
-    gap: 4rem;
-}
-.gaprem-2 {
-    gap: 4rem;
 }
 .gap3rem-footer {
     gap: 3rem;
@@ -443,6 +443,12 @@ a {
 }
 .gap6rem-footer-2 {
     gap: 6rem;
+}
+.gaprem {
+    gap: 4rem;
+}
+.gaprem-footer {
+    gap: 2rem;
 }
 .grid-column-3-pt2 {
     grid-template-columns: repeat(3, auto);
@@ -615,8 +621,12 @@ a {
     }
     
     /*--------- SERVICIOS  ---------- */
-    .servicios {
-        display: none;
+    .flex-column-serv {
+        flex-direction: column;
+    }
+    .center-serv {
+        align-items: center;
+        justify-content: center;
     }
 
     /*--------- OPTIMIZA  ---------- */
@@ -652,6 +662,9 @@ a {
     }
     .gap3rem-footer {
         gap: 2rem;
+    }
+    .my-gap {
+        gap: 4rem;
     }
 }
 

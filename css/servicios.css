@@ -247,16 +247,6 @@ a {
     color: white;
     background-color: black;
 }
-.footer-title {
-    text-transform: uppercase;
-    color: #0B290A;
-    font-size: clamp(13px, 3vw, 14px);
-}
-.h-footer > a {
-    color: white;
-    font-size: clamp(17px, 3vw, 19px);
-    transition: all .3s ease-in-out;
-}
 .gap5rem2 {
     gap: 5.8rem;
 }
@@ -446,9 +436,6 @@ a {
     }
     
     /*--------- SERVICIOS  ---------- */
-    .servicios {
-        display: none;
-    }
 
     /*--------- OPTIMIZA  ---------- */
     .optimiza-img {
@@ -936,6 +923,7 @@ a {
 /* Estilos generales para el dropdown */
 .dropdown {
     position: relative;
+    top: -4px;
 }
 .dropdown-content {
     display: none;
