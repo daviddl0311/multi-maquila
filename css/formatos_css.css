@@ -88,7 +88,7 @@ a {
     padding-block: 5rem;
 }
 .title-formato {
-    font-size: clamp(22px, 3vw, 33px);
+    font-size: clamp(30px, 3vw, 40px);
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -693,130 +693,6 @@ a {
 
     .footer-text {
         font-size: 30px;
-        width: 100%;
-    }
-    .footer-img div {
-        width: 250px;
-        height: 320px;
-    }
-}
-
-@media(max-width: 350px) {
-    /* --------- HEADER ---------- */
-    .btn {
-        display: none;
-    }
-    .logo-menu {
-        display: block;
-    }
-    .logo-menu img {
-        width: 100%;
-    }
-    .burger {
-        display: block;
-    }
-    .burger-label {
-        font-size: clamp(20px, 3vw, 25px);
-    }
-    .flex-column2 {
-        flex-direction: column;
-    }
-    .enlace {
-        background-color: white;
-        position: absolute;
-        width: 50%;
-        z-index: 6;
-        top: 0px;
-        left: -100%;
-        gap: 3rem;
-        padding-block: .6rem;
-        padding-inline: 1.3rem;
-        height: 100vh;
-        transition: all .3s ease-in-out;
-    }
-    .btn-2 {
-        display: block;
-    }
-    .btn-2 button {
-        background-color: #3EAB35;
-        width: 100%;
-        color: white;
-        border-radius: 10px;
-        padding-block: .9rem;
-        padding-inline: 1.2rem;
-        font-size: clamp(15px, 3vw, 18px);
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-    }
-    .btn-2 > button:hover {
-        background-color: #309128;
-    }
-    .burger-label {
-        display: block;
-    }
-
-    #burger-menu:checked ~ .enlace {
-        left: 0px;
-    }
-
-    /*-------- FORMATOS --------*/
-    .formato {
-        padding: 3rem;
-    }
-    .grid-column-3 {
-        grid-template-columns: repeat(1, auto);
-    }
-    .for-item:hover {
-        .for-inf {
-            z-index: 0;
-            height: 290px;
-            background-color: #0B290A;
-        }
-    }
-    .for-img img {
-        width: 220px;
-        height: 290px;
-        object-fit: cover;
-        border-radius: 15px;
-    }
-    .for-inf {
-        transition: all .3s ease-in-out;
-        position: absolute;
-        width: 220px;
-        height: 290px;
-        z-index: -1;
-        border-radius: 15px;
-    }
-    .gap3rem-for {
-        gap: 2rem;
-    }
-    .for-text p {
-        width: 150px;
-    }
-
-    /*-------- FOOTER ----------*/
-    .footer {
-        padding: 3rem;
-    }
-    .flex-column-footer {
-        flex-direction: column-reverse;
-    }
-    .gap6rem-footer {
-        gap: 3rem;
-    }
-    .gap6rem-footer-2 {
-        gap: 3rem;
-    }
-
-    .grid-column-3-pt2 {
-        grid-template-columns: repeat(2, auto);
-    }
-    .gap3rem-footer {
-        gap: 2rem;
-    }
-
-    .footer-text {
-        font-size: 23px;
         width: 100%;
     }
     .footer-img div {
