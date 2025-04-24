@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Maquilas - Formatos</title>
+    <link rel="preload" href="css/formatos_css.css" as="stylesheet">
+    <link rel="preload" href="css/header-servicio.css" as="stylesheet">
     <link rel="stylesheet" href="css/formatos_css.css">
-    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/header-servicio.css">
     <link rel="website Icon" href="img/img-inicio/logo-1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,32 +36,33 @@
                             <img src="img/img-inicio/logo-multi-maquilas.png" alt="Logo Multi-Maquila">
                         </a>
                     </li>
-                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="index.html">Nosotros</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0);" onclick="toggleServicios()" id="toggleServiciosBtn">Servicios ▼</a>
-                            <ul class="dropdown-content" id="serviciosDropdown">
-                                <li><a href="enpaquetado.html">EMPAQUETADOS DE PRODUCTOS</a></li>
-                                <li><a href="etiquetado.html">ETIQUETADO DE PRODUCTOS</a></li>
-                                <li><a href="encajillado.html">ENCAJILLADO DE PRODCUTOS</a></li>
-                                <li><a href="embolsado.html">EMBOLSADO</a></li>
-                                <li><a href="armado-ofertas.html">SERVICIO DE ARMADO DE OFERTAS</a></li>
-                                <li><a href="retractilado.html">RETRACTILADO</a></li>
-                                <li><a href="acondicionamiento.html">ACONDICIONAMIENTO DE PRODUCTOS</a></li>
-                                <li><a href="enmangado.html">ENMANGADO TERMOENCOGIBLE</a></li>
-                                <li><a href="sachets.html">FORMATOS DE SACHETS</a></li>
-                                <li><a href="formulacion.html">FORMULACION</a></li>
-                                <li><a href="diseno-etiquetas.html">DISEÑO DE ETIQUETAS</a></li>
-                                <li><a href="asesoria-contratos.html">ASESORÍA DE CONFECCIÓN DE CONTRATOS</a></li>
-                                <li><a href="laminas-metalizadas.html">ENVASADO EN LÁMINAS METALIZADAS</a></li>
-                                <li><a href="sachets.html">ENVASADO EN SACHETS TIPO STICK</a></li>
-                                <li><a href="codificado.html">CODIFICADO DE LOTE Y FECHA DE VENCIMIENTO</a></li>
-                                <li><a href="envase-frascos.html">ENVASADO EN FRASCOS PLÁSTICOS</a></li>
-                                <li><a href="embalsado.html">SERVICIO DE EMBALSADO POSTERIOR</a></li>
-                                <li><a href="mezclado.html">FORMULACIÓN Y MEZCLADO DE POLVOS</a></li>
-                                <li><a href="contratos-abastecimiento.html">ASESORÍA PARA CONTRATOS DE ABASTECIMIENTO</a></li>
-                            </ul>
+                        <ul class="dropdown-content" id="serviciosDropdown">
+                            <li><a href="servicios/empaquetado.html">EMPAQUETADOS DE PRODUCTOS</a></li>
+                            <li><a href="servicios/etiquetado.html">ETIQUETADO DE PRODUCTOS</a></li>
+                            <li><a href="servicios/encajillado.html">ENCAJILLADO DE PRODCUTOS</a></li>
+                            <li><a href="servicios/embolsado.html">EMBOLSADO</a></li>
+                            <li><a href="servicios/armado-ofertas.html">SERVICIO DE ARMADO DE OFERTAS</a></li>
+                            <li><a href="servicios/retractilado.html">RETRACTILADO</a></li>
+                            <li><a href="servicios/acondicionamiento.html">ACONDICIONAMIENTO DE PRODUCTOS</a></li>
+                            <li><a href="servicios/enmangado.html">ENMANGADO TERMOENCOGIBLE</a></li>
+                            <li><a href="servicios/sachets.html">FORMATOS DE SACHETS</a></li>
+                            <li><a href="servicios/formulacion.html">FORMULACION</a></li>
+                            <li><a href="servicios/diseno-etiquetas.html">DISEÑO DE ETIQUETAS</a></li>
+                            <li><a href="servicios/asesoria-contratados.html">ASESORÍA DE CONFECCIÓN DE CONTRATOS</a></li>
+                            <li><a href="servicios/laminas-metalizadas.html">ENVASADO EN LÁMINAS METALIZADAS</a></li>
+                            <li><a href="servicios/sachet-stick.html">ENVASADO EN SACHETS TIPO STICK</a></li>
+                            <li><a href="servicios/codificado.html">CODIFICADO DE LOTE Y FECHA DE VENCIMIENTO</a></li>
+                            <li><a href="servicios/frascos-plastico.html">ENVASADO EN FRASCOS PLÁSTICOS</a></li>
+                            <li><a href="servicios/embalaje.html">SERVICIO DE EMBALAJE POSTERIOR</a></li>
+                            <li><a href="servicios/mezclado.html">FORMULACIÓN Y MEZCLADO DE POLVOS</a></li>
+                            <li><a href="servicios/contratos-abastecimiento.html">ASESORÍA PARA CONTRATOS DE ABASTECIMIENTO</a></li>
+                        </ul>
                     </li>
-                    <li><a href="formatos.html">Formatos</a></li>
+                    <li><a href="#formato" id="enlace-for">Formatos</a></li>
+                    <li><a href="embalaje.html">Embalajes</a></li>
                     <li class="display-none btn-2 center">
                         <button onclick="location.href='https://wa.me/51975541724/?text=¡Hola,%20agradecería%20más%20información!'">Escríbenos</button>
                     </li>
@@ -259,10 +262,10 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-column-footer my-gap">
+        <div class="flex flex-column-footer my-gap center-special-2">
             <div class="flex flex-column">
                 <div class="img-logo">
-                    <a href="#multi-maquilas">
+                    <a href="index.html">
                         <img src="img/img-inicio/logo-multi-maquilas.png" alt="Logo Multi-Maquila">
                     </a>
                 </div>
@@ -297,12 +300,6 @@
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
                     </a>
-                    <!-- <div class="social ins">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="social tik">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </div> -->
                 </div>
             </div>
             <div class="grid grid-column-3-pt2 gap3rem-footer">
@@ -310,23 +307,41 @@
                     <div class="footer-title">
                         <h2>empresa</h2>
                     </div>
-                    <a href="index.html">Nosotros</a>
-                </div>
-                <div class="flex flex-column gappx3 h-footer">
-                    <div class="footer-title">
-                        <h2>formatos</h2>
+                    <div class="flex flex-column h-enlace h-enlace-gap">
+                        <a href="index.html">Nosotros</a>
+                        <a href="#formato">Formatos</a>
+                        <a href="embalaje.html">Embalajes</a>
                     </div>
-                    <a href="#liner">Liner</a>
-                    <a href="#flexible">Flexible</a>
-                    <a href="#carton">Cartón Metálico</a>
                 </div>
                 <div class="flex flex-column gappx3 h-footer">
                     <div class="footer-title">
                         <h2>servicios</h2>
                     </div>
-                    <a href="sachets-stick.html">Sachets Stick</a>
-                    <a href="codificado.html">Codificado</a>
-                    <a href="acondicionamiento.html">Acondicionamiento</a>
+                    <div class="h-enlace-2 flex enlace-flex-column h-enlace-gap-2">
+                        <div class="flex flex-column h-enlace-gap">
+                            <a href="servicios/empaquetado.html">Empaquetado</a>
+                            <a href="servicios/etiquetado.html">Etiquetado</a>
+                            <a href="servicios/encajillado.html">Encajillado</a>
+                            <a href="servicios/embolsado.html">Embolsado</a>
+                            <a href="servicios/armado-ofertas.html">Armado de Ofertas</a>
+                            <a href="servicios/retractilado.html">Retractilado</a>
+                            <a href="servicios/acondicionamiento.html">Acondicionamiento</a>
+                            <a href="servicios/enmangado.html">Enmangado</a>
+                            <a href="servicios/sachets.html">Sachets</a>
+                            <a href="servicios/formulacion.html">Formulación</a>
+                        </div>
+                        <div class="flex flex-column h-enlace-gap">
+                            <a href="servicios/diseno-etiquetas.html">Diseño Etiquetas</a>
+                            <a href="servicios/asesoria-contratados.html">Asesoría Contratos</a>
+                            <a href="servicios/laminas-metalizadas.html">Láminas Metalizadas</a>
+                            <a href="servicios/sachet-stick.html">Sachets Stick</a>
+                            <a href="servicios/codificado.html">Codificado</a>
+                            <a href="servicios/frascos-plastico.html">Frascos Plásticos</a>
+                            <a href="servicios/embalaje.html">Embalaje Posterior</a>
+                            <a href="servicios/mezclado.html">Mezclado</a>
+                            <a href="servicios/contratos-abastecimiento.html">Contratos Abastecimiento</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
