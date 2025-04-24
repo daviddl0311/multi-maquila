@@ -314,7 +314,7 @@ a {
 .my-gap {
     gap: 7rem;
 }
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     /* --------- HEADER ---------- */
     .btn {
         display: none;
