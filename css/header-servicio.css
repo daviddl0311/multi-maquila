@@ -44,7 +44,11 @@
     background-color: #aaa;
 }
 
-
+@media (max-width: 1000px) {
+    .dropdown {
+        top: 0px;
+    }
+}
 @media(max-width: 768px) {
     .dropdown-content {
         position: static;
