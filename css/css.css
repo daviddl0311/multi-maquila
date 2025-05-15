@@ -10,10 +10,10 @@ header {
     width: 100%;
     position: sticky;
     z-index: 1000;
-}
-header {
+    transition: all .3s ease-in-out;
     background-color: white;
 }
+
 ul > li {
     color: #4A4A49;
     list-style-type: none;
