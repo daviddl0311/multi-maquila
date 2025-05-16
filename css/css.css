@@ -10,7 +10,6 @@ header {
     width: 100%;
     position: sticky;
     z-index: 1000;
-    transition: all .3s ease-in-out;
     background-color: white;
 }
 
@@ -48,12 +47,12 @@ a {
     padding-inline: 2rem;
 }
 .enlace {
-    gap: 4rem;
+    gap: 3.5rem;
 }
 .enlace > li > a {
     color: #4A4A49;  
     transition: all .3s ease-in-out;
-    font-size: clamp(15px, 3vw, 16.5px); 
+    font-size: 15px; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
@@ -502,7 +501,7 @@ a {
     gap: 7rem;
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1150px) {
     /* --------- HEADER ---------- */
     .btn {
         display: none;
