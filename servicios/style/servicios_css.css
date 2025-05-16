@@ -85,6 +85,11 @@ a {
     display: none;
 }
 
+#google_translate_element {
+    width: 170px;
+    height: 25px;
+}
+
 /*------- EMPAQUETADO --------*/
 .container {
     height: 800px;

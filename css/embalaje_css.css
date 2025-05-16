@@ -89,6 +89,11 @@ a {
     color: #3EAB35;
 }
 
+#google_translate_element {
+    width: 170px;
+    height: 25px;
+}
+
 /*----------- EMBALAJE ----------*/
 .embalaje {
     padding-block: 5rem;
