@@ -38,6 +38,10 @@ a {
     flex-direction: column;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /* --------- HEADER ---------- */
 .img-logo img {
     width: 12rem;
