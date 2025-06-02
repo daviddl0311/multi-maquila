@@ -133,10 +133,14 @@ a {
         color: white;
     }
 }
+.item-img {
+    background-color: white;
+    border-radius: 15px;
+}
 .item-img img {
     width: 220px;
-    height: 260px;
-    object-fit: fill;
+    height: 280px;
+    object-fit: contain;
     border-radius: 15px;
 }
 .item-text {
@@ -680,7 +684,7 @@ a {
     .item-img img {
         width: 200px;
         height: 250px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 15px;
     }
     .item-text {
@@ -838,7 +842,7 @@ a {
     .item-img img {
         width: 200px;
         height: 250px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 15px;
     }
     .item-text {
@@ -989,7 +993,7 @@ a {
     .item-img img {
         width: 180px;
         height: 250px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 15px;
     }
     .item-text {
