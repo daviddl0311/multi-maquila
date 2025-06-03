@@ -332,8 +332,9 @@ a {
 }
 .optimiza-img img {
     width: 25rem;
+    object-fit: contain;
 }
-.optimiza-pregunta {
+.optimiza-pregunta {    
     color: #297223;
     font-size: clamp(20px, 3vw, 26px);
     width: 360px;
@@ -498,8 +499,9 @@ a {
     grid-template-columns: repeat(2, auto);
 }
 .footer-img a > img {
-    width: 420px;
-    height: 500px;
+    width: 400px;
+    height: 450px;
+    object-fit: contain;
     border-radius: 15px;
     transition: all .3s ease-in-out;
 }
@@ -575,6 +577,9 @@ a {
     }
     .gap6rem-footer {
         gap: 5rem;
+    }
+    .flex-column-footer {
+        flex-direction: column-reverse;
     }
 }
 @media(max-width: 900px) {
@@ -1021,6 +1026,9 @@ a {
     .h-enlace-gap-2 {
         gap: 4rem;
     }
+    .enlace-flex-column {
+        flex-direction: column;
+    }  
 }
 
 @media(max-width: 400px) {
