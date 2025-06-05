@@ -750,7 +750,7 @@ a {
         align-items: center;
     }
     .footer-img a > img {
-        width: 100%;
+        width: 320px;
         height: 100%;
         border-radius: 15px;
         transition: all .3s ease-in-out;
@@ -906,6 +906,12 @@ a {
         width: 250px;
         height: 320px;
     }
+    .footer-img a > img {
+        width: 280px;
+        height: 100%;
+        border-radius: 15px;
+        transition: all .3s ease-in-out;
+    }
 
     .grid-column-3-pt2 {
         grid-template-columns: repeat(1, auto);
@@ -1056,6 +1062,12 @@ a {
     .footer-img div {
         width: 250px;
         height: 320px;
+    }
+    .footer-img a > img {
+        width: 250px;
+        height: 100%;
+        border-radius: 15px;
+        transition: all .3s ease-in-out;
     }
 
     .grid-column-3-pt2 {
