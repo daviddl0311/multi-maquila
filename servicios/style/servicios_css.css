@@ -163,6 +163,7 @@ a {
 .val {
     background-color: #0b290a;
     padding-block: 5rem;
+    cursor: default;
 }
 .item-val {
     position: relative;
