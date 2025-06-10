@@ -126,6 +126,7 @@ a {
     width: 220px;
     font-family: 'Source Sans 3', sans-serif;
     transition: all .3s ease-in-out;
+    cursor: default;
 }
 .item:hover {
     background-color: #0b290a;
