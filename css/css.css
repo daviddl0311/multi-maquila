@@ -120,21 +120,27 @@ a {
 .text-multi {
     color: white;
 }
+.principal-titles {
+    width: clamp(200px, 30vw, 400px);
+}
 .sub-title, .sub-title-multi {
-    font-size: clamp(50px, 3vw, 60px);
+    font-size: clamp(30px, 3vw, 60px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    width: fit-content;
 }
 .sub-title-multi {
     color: #33CC33;
 }
 .sub-title-text {
     gap: .6rem;
+    width: clamp(262px, 30vw, 400px);
 }
 .sub-title-text > p {
     font-size: clamp(17px, 3vw, 18px);
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
+    width: fit-content;
 }
 .sub-title-button  button {
     background-color: #3EAB35;
@@ -175,9 +181,13 @@ a {
 .title-multi {
     color: #3EAB35;
     text-transform: uppercase;
-    font-size: clamp(23px, 3vw, 25px);
+    font-size: clamp(20px, 3vw, 25px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    width: 100%;
+}
+.title-multi h2 {
+    width: fit-content;
 }
 .nosotros-title {
     color: #3EAB35;
@@ -214,7 +224,7 @@ a {
     border-radius: 15px;
     padding: 1.2rem;
     width: 210px;
-    height: 400px;
+    height: fit-content;
 }
 .item {
     background-color: #C8EFC3;
@@ -241,6 +251,9 @@ a {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
 }
+/* .item-title h2 {
+    width: fit-content;
+} */
 .item-title-2 {
     color: white;
     font-size: 12px;
@@ -248,12 +261,19 @@ a {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
 }
+/* .item-title-2 h2 {
+    width: fit-content;
+} */
 .item-text {
     color: #0B290A;
     font-size: 16px;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
+    /* width: fit-content; */
 }
+/* .item-text p {
+    width: 200px;
+} */
 .item-text-2 {
     color: white;
     font-size: 16px;
@@ -261,7 +281,7 @@ a {
     font-weight: 400;
 }
 .item-button > a {
-    font-size: clamp(10px, 3vw, 15px);
+    font-size: 15px;
     background-color: #3EAB35;
     padding-inline: 1.3rem;
     padding-block: .8rem;
@@ -270,12 +290,13 @@ a {
     transition: all .3s ease-in-out;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    width: fit-content;
 }
 .item-button > a:hover {
     background-color: #309128;
 }
 .item-button-2 > a {
-    font-size: clamp(10px, 3vw, 15px);
+    font-size: 15px;
     background-color: #C8EFC3;
     padding-inline: 1.3rem;
     padding-block: .8rem;
@@ -289,7 +310,7 @@ a {
     background-color: #99e293;
 }
 .item-button-3 > a {
-    font-size: clamp(10px, 3vw, 15px);
+    font-size: 15px;
     background-color: #C8EFC3;
     padding-inline: 1.3rem;
     padding-block: .8rem;
@@ -443,6 +464,10 @@ a {
     font-size: clamp(12px, 3vw, 13px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    width: 100px;
+}
+.footer-title h2 {
+    width: fit-content;
 }
 .h-footer > a {
     color: white;
@@ -451,19 +476,28 @@ a {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
 }
+/* .h-enlace {
+    width: 100px;
+}*/
+.h-enlace-2 {
+    width: 150px;
+} 
 .h-enlace > a {
     color: white;
+    width: fit-content;
     font-size: 17px;
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
+    width: fit-content;
 }
-.h-enlace-2 > div > a {
+.h-enlace-2 > a {
     color: white;
     font-size: 17px;
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
+    width: fit-content;
 }
 .h-enlace-gap {
     gap: 1rem;
@@ -509,7 +543,7 @@ a {
     scale: 1.1;
 }
 .my-gap {
-    gap: 7rem;
+    gap: 5rem;
 }
 
 @media(max-width: 1150px) {
