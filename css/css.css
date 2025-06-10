@@ -493,7 +493,7 @@ a {
     gap: 4rem;
 }
 .gaprem-footer {
-    gap: 2rem;
+    gap: 3rem;
 }
 .grid-column-3-pt2 {
     grid-template-columns: repeat(2, auto);
