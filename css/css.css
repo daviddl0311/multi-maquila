@@ -121,10 +121,10 @@ a {
     color: white;
 }
 .principal-titles {
-    width: clamp(200px, 30vw, 400px);
+    width: clamp(350px, 30vw, 400px);
 }
 .sub-title, .sub-title-multi {
-    font-size: clamp(30px, 3vw, 60px);
+    font-size: clamp(35px, 3vw, 60px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     width: fit-content;
@@ -134,7 +134,7 @@ a {
 }
 .sub-title-text {
     gap: .6rem;
-    width: clamp(262px, 30vw, 400px);
+    width: clamp(350px, 30vw, 400px);
 }
 .sub-title-text > p {
     font-size: clamp(17px, 3vw, 18px);
@@ -205,6 +205,10 @@ a {
 }
 .nosotros-img img {
     width: 24rem;
+    transition: all .3s ease-in-out;
+}
+.nosotros-img img:hover {
+    scale: 1.1;
 }
 .servicios {
     padding-bottom: 3rem;
@@ -225,6 +229,11 @@ a {
     padding: 1.2rem;
     width: 210px;
     height: fit-content;
+    transition: all .3s ease-in-out;
+    cursor: default;
+}
+.item:hover, .item-2:hover, .item-3:hover {
+    scale: 1.05;
 }
 .item {
     background-color: #C8EFC3;
@@ -352,8 +361,13 @@ a {
     margin-top: 2rem;
 }
 .optimiza-img img {
-    width: 25rem;
+    width: 20rem;
+    height: 18rem;
     object-fit: contain;
+    transition: all .3s ease-in-out;
+}
+.optimiza-img img:hover {
+    scale: 1.1;
 }
 .optimiza-pregunta {    
     color: #297223;
@@ -365,8 +379,7 @@ a {
     font-weight: 600;
 }
 .optimiza-text {
-    width: 410px;
-    text-align: justify;
+    width: 360px;
     font-size: clamp(17px, 3vw, 20px);
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;       
@@ -476,9 +489,6 @@ a {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
 }
-/* .h-enlace {
-    width: 100px;
-}*/
 .h-enlace-2 {
     width: 150px;
 } 
@@ -702,6 +712,14 @@ a {
     .multi-maquila {
         height: 600px;
     }
+    .principal-titles {
+        width: 380px;
+        font-size: 40px;
+    }
+    .sub-title-text {
+        width: 380px;
+        font-size: 30px;
+    }
 
     /* --------- NOSOTROS  ---------- */
     .nosotros-multi {
@@ -858,6 +876,12 @@ a {
     .multi-maquila {
         height: 600px;
     }
+    .principal-titles {
+        width: 300px;
+    }
+    .sub-title-text {
+        width: 300px;
+    }
 
     /* --------- NOSOTROS  ---------- */
     .nosotros-multi {
@@ -989,10 +1013,13 @@ a {
         left: 0px;
     }
 
-    /*-------- NOSOTROS -----------*/
-    .text-multi {
-        padding: 2rem;
+    /*-------- MULTI-MAQUILAS -------*/
+    .principal-titles {
+        font-size: 28px;
     }
+
+
+    /*-------- NOSOTROS -----------*/
     .gap4rem-2 {
         gap: 3rem;
     }
@@ -1121,6 +1148,14 @@ a {
 
     #burger-menu:checked ~ .enlace {
         left: 0px;
+    }
+
+    /*-------- MULTI MAQUILAS ---------*/
+    .principal-titles, .sub-title-text {
+        width: 280px;
+    }
+    .sub-title, .sub-title-multi {
+        font-size: 27px;
     }
 
     /*-------- NOSOTROS -------*/
