@@ -121,7 +121,7 @@ a {
     color: white;
 }
 .principal-titles {
-    width: clamp(350px, 30vw, 400px);
+    width: 400px;
 }
 .sub-title, .sub-title-multi {
     font-size: clamp(35px, 3vw, 60px);
@@ -134,7 +134,7 @@ a {
 }
 .sub-title-text {
     gap: .6rem;
-    width: clamp(350px, 30vw, 400px);
+    width: 400px;
 }
 .sub-title-text > p {
     font-size: clamp(17px, 3vw, 18px);
