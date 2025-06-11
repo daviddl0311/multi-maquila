@@ -154,7 +154,7 @@ a {
     gap: 13px;
 }
 .for-title {
-    font-size: clamp(18px, 3vw, 20px);
+    font-size: clamp(15px, 3vw, 20px);
     text-transform: uppercase;
     color: white;
     font-family: 'Barlow', sans-serif;
