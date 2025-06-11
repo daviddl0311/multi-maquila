@@ -385,6 +385,12 @@ a {
     gap: 7rem;
 }
 
+@media(min-width: 1151px) {
+    .center-2 {
+        display: grid;
+        place-content: center;
+    }
+}
 @media(max-width: 1150px) {
     /* --------- HEADER ---------- */
     .btn {

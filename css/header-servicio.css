@@ -1,11 +1,11 @@
 /* Estilos generales para el dropdown */
 .dropdown {
     position: relative;
-    top: -2px;
 }
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 20px;
     background-color: white;
     min-width: 300px;
     max-height: 400px;
