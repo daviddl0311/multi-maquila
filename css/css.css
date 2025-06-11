@@ -474,7 +474,7 @@ a {
 .footer-title {
     text-transform: uppercase;
     color: #0B290A;
-    font-size: clamp(12px, 3vw, 13px);
+    font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     width: 100px;
@@ -495,7 +495,7 @@ a {
 .h-enlace > a {
     color: white;
     width: fit-content;
-    font-size: 17px;
+    font-size: 16.5px;
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
@@ -503,7 +503,7 @@ a {
 }
 .h-enlace-2 > a {
     color: white;
-    font-size: 17px;
+    font-size: 16.5px;
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
@@ -556,6 +556,12 @@ a {
     gap: 5rem;
 }
 
+@media(min-width: 1151px) {
+    .center-2 {
+        display: grid;
+        place-content: center;
+    }
+}
 @media(max-width: 1150px) {
     /* --------- HEADER ---------- */
     .btn {
