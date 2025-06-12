@@ -286,7 +286,6 @@ a {
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
-    width: fit-content;
 }
 .h-enlace-gap {
     gap: 1rem;

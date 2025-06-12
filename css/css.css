@@ -124,7 +124,7 @@ a {
     width: 400px;
 }
 .sub-title, .sub-title-multi {
-    font-size: clamp(35px, 2vw, 60px);
+    font-size: clamp(35px, 1rem, 60px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     width: fit-content;
@@ -260,9 +260,6 @@ a {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
 }
-/* .item-title h2 {
-    width: fit-content;
-} */
 .item-title-2 {
     color: white;
     font-size: 12px;
@@ -270,19 +267,12 @@ a {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
 }
-/* .item-title-2 h2 {
-    width: fit-content;
-} */
 .item-text {
     color: #0B290A;
     font-size: 16px;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
-    /* width: fit-content; */
 }
-/* .item-text p {
-    width: 200px;
-} */
 .item-text-2 {
     color: white;
     font-size: 16px;
@@ -314,6 +304,7 @@ a {
     transition: all .3s ease-in-out;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    width: fit-content;
 }
 .item-button-2 > a:hover {
     background-color: #99e293;
@@ -329,6 +320,7 @@ a {
     transition: all .3s ease-in-out;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    width: fit-content;
 }
 .item-button-3 > a:hover {
     background-color: #297223;
@@ -494,12 +486,10 @@ a {
 } 
 .h-enlace > a {
     color: white;
-    width: fit-content;
     font-size: 16.5px;
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
-    width: fit-content;
 }
 .h-enlace-2 > a {
     color: white;
@@ -507,7 +497,6 @@ a {
     transition: all .3s ease-in-out;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400; 
-    width: fit-content;
 }
 .h-enlace-gap {
     gap: 1rem;
