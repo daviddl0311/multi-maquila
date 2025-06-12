@@ -124,7 +124,7 @@ a {
     width: 400px;
 }
 .sub-title, .sub-title-multi {
-    font-size: clamp(35px, 3vw, 60px);
+    font-size: clamp(35px, 2vw, 60px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     width: fit-content;
@@ -528,7 +528,7 @@ a {
     gap: 3.5rem;
 }
 .gap6rem-footer {
-    gap: 4.5rem;
+    gap: 4rem;
 }
 .gap6rem-footer-2 {
     gap: 4rem;
@@ -548,6 +548,9 @@ a {
     object-fit: contain;
     border-radius: 15px;
     transition: all .3s ease-in-out;
+}
+.footer-info {
+    padding-right: 4rem;
 }
 .footer-img a > img:hover {
     scale: 1.1;
@@ -624,6 +627,9 @@ a {
     /*------- FOOTER ------------*/
     .footer {
         padding: 3rem;
+    }
+    .footer-info {
+        padding-right: 0rem;
     }
     .gap6rem-footer {
         gap: 5rem;

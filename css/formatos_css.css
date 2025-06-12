@@ -310,7 +310,7 @@ a {
     gap: 3.5rem;
 }
 .gap6rem-footer {
-    gap: 4.5rem;
+    gap: 4rem;
 }
 .gap6rem-footer-2 {
     gap: 4rem;
@@ -330,6 +330,9 @@ a {
     object-fit: contain;
     border-radius: 15px;
     transition: all .3s ease-in-out;
+}
+.footer-info {
+    padding-right: 4rem;
 }
 .footer-img a > img:hover {
     scale: 1.1;
@@ -412,6 +415,9 @@ a {
     }
 
     /*------- FOOTER ------------*/
+    .footer-info {
+        padding-right: 0rem;
+    }
     .footer {
         padding: 3rem;
     }
